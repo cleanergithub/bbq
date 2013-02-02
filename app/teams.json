@@ -1,7 +1,7 @@
 {
     "ARI": {
         "color": "#B10339",
-        "name" : "Arizon Cardinals"
+        "name": "Arizon Cardinals"
     },
     "ATL": {
         "color": "#000000",
@@ -13,31 +13,31 @@
     },
     "BUF": {
         "color": "#00133F",
-        "name":"Buffalo Bills"
+        "name": "Buffalo Bills"
     },
     "CAR": {
         "color": "#0097C6",
-        "name" : "Carolina Panthers"
+        "name": "Carolina Panthers"
     },
     "CHI": {
         "color": "#00133F",
-        "name":"Chicago Bears"
+        "name": "Chicago Bears"
     },
     "CIN": {
         "color": "#FF2700",
-        "name":"Cincinnati Bengals"
+        "name": "Cincinnati Bengals"
     },
     "CLE": {
         "color": "#4C230E",
-        "name":"Cleveland Browns"
+        "name": "Cleveland Browns"
     },
     "DAL": {
         "color": "#002E4D",
-        "name":"Dallas Cowboys"
+        "name": "Dallas Cowboys"
     },
     "DEN": {
         "color": "#002E4D",
-        "name":"Denver Broncos"
+        "name": "Denver Broncosgit "
     },
     "DET": {
         "color": "#006EA1",
@@ -57,27 +57,27 @@
     },
     "JAC": {
         "color": "#00839C",
-        "name":"Jacksonville Jaquars"
+        "name": "Jacksonville Jaquars"
     },
     "KC": {
         "color": "#C60024",
-        "name":"Kansas City Chiefs"
+        "name": "Kansas City Chiefs"
     },
     "MIA": {
         "color": "#006B79",
-        "name" : "Miami Dolphins"
+        "name": "Miami Dolphins"
     },
     "MIN": {
         "color": "#240A67",
-        "name" : "Minnesota Vikings"
+        "name": "Minnesota Vikings"
     },
     "NE": {
         "color": "#00295B",
-        "name":"New England Patriots"
+        "name": "New England Patriots"
     },
     "NO": {
         "color": "#C6A876",
-        "name" : "New Orleans Saints"
+        "name": "New Orleans Saints"
     },
     "NYG": {
         "color": "#003155",
@@ -85,23 +85,23 @@
     },
     "NYJ": {
         "color": "#174032",
-        "name" : "New York Jets"
+        "name": "New York Jets"
     },
     "OAK": {
         "color": "#000000",
-        "name" : "Oakland Raiders"
+        "name": "Oakland Raiders"
     },
     "PHI": {
         "color": "#002F30",
-        "name" : "Philadelphia Eagles"
+        "name": "Philadelphia Eagles"
     },
     "PIT": {
         "color": "#000000",
-        "name" : "Pittsburgh Steelers"
+        "name": "Pittsburgh Steelers"
     },
     "SD": {
         "color": "#05173C",
-        "name" : "San Diego Chargers"
+        "name": "San Diego Chargers"
     },
     "SF": {
         "color": "#940029",
@@ -109,22 +109,22 @@
     },
     "SEA": {
         "color": "#030F1F",
-        "name" : "Seattle Seahawks"
+        "name": "Seattle Seahawks"
     },
     "STL": {
         "color": "#00295B",
-        "name" : "Saint Louis Rams"
+        "name": "Saint Louis Rams"
     },
     "TB": {
         "color": "#665C50",
-        "name" : "Tampa Bay Buccaneers"
+        "name": "Tampa Bay Buccaneers"
     },
     "TEN": {
         "color": "#002C4B",
-        "name" : "Tennessee Titans"
+        "name": "Tennessee Titans"
     },
     "WAS": {
         "color": "#8C001A",
-        "name" : "Washington Redskins"
+        "name": "Washington Redskins"
     }
 }
