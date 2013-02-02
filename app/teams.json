@@ -9,11 +9,13 @@
     },
     "BAL": {
         "color": "#2B025B",
-        "name": "Baltimore Ravens"
+        "name": "Baltimore Ravens",
+        "url":"http://www.baltimoreravens.com/"
     },
     "BUF": {
         "color": "#00133F",
-        "name": "Buffalo Bills"
+        "name": "Buffalo Bills",
+        "url":"http://www.buffalobills.com/"
     },
     "CAR": {
         "color": "#0097C6",
@@ -25,7 +27,8 @@
     },
     "CIN": {
         "color": "#FF2700",
-        "name": "Cincinnati Bengals"
+        "name": "Cincinnati Bengals",
+        "url":"http://www.bengals.com/"
     },
     "CLE": {
         "color": "#4C230E",
@@ -37,7 +40,7 @@
     },
     "DEN": {
         "color": "#002E4D",
-        "name": "Denver Broncosgit "
+        "name": "Denver Broncos"
     },
     "DET": {
         "color": "#006EA1",
@@ -65,7 +68,8 @@
     },
     "MIA": {
         "color": "#006B79",
-        "name": "Miami Dolphins"
+        "name": "Miami Dolphins",
+        "url":"http://www.miamidolphins.com/"
     },
     "MIN": {
         "color": "#240A67",
@@ -73,7 +77,8 @@
     },
     "NE": {
         "color": "#00295B",
-        "name": "New England Patriots"
+        "name": "New England Patriots",
+        "url":"http://www.patriots.com/"
     },
     "NO": {
         "color": "#C6A876",
@@ -85,7 +90,8 @@
     },
     "NYJ": {
         "color": "#174032",
-        "name": "New York Jets"
+        "name": "New York Jets",
+        "url":"http://www.newyorkjets.com/"
     },
     "OAK": {
         "color": "#000000",
@@ -109,7 +115,8 @@
     },
     "SEA": {
         "color": "#030F1F",
-        "name": "Seattle Seahawks"
+        "name": "Seattle Seahawks",
+        "url" :"http://www.seahawks.com/"
     },
     "STL": {
         "color": "#00295B",

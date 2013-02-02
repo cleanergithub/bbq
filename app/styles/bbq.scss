@@ -1,3 +1,5 @@
+$bbq-color: #720303;
+
 * {
     font-family: 'Crete Round', serif;
 }
@@ -6,15 +8,24 @@ body {
     background: #EEEEEE;
 }
 
+.navbar-brand-bbq {
+    color: $bbq-color;
+}
 
 a,
 a:link,
 a:visited {
-    color: #FF0000;
+    color: $bbq-color;   
 }
  
 a:hover,
 a:active  {
-     color: #FF0000;
+     color: $bbq-color;   
 
+}
+
+.team-nav {
+    a {
+        color:#333333;
+    }
 }

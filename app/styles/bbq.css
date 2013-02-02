@@ -4,11 +4,17 @@
 body {
   background: #EEEEEE; }
 
+.navbar-brand-bbq {
+  color: #720303; }
+
 a,
 a:link,
 a:visited {
-  color: #FF0000; }
+  color: #720303; }
 
 a:hover,
 a:active {
-  color: #FF0000; }
+  color: #720303; }
+
+.team-nav a {
+  color: #333333; }

@@ -15,6 +15,10 @@ var getURLParameter = function (name) {
 var teamName = function () {
     var team = getURLParameter('team');
 
+    if (team === '') {
+        $('h1').append('No Team Selected')
+    }
+
     console.log('team is ' + team)
 
     $.ajax({
@@ -23,9 +27,12 @@ var teamName = function () {
             $.each(json, function(key, value){
                 console.log('key : ' + key + ', value :' + value);
                 if (key === team) {
-                    $('div[role="main"]').append('<img src="images/logos/' + key + '.svg" width="150px"/>');
+                    $('.logo').append('<img src="images/logos/' + key + '.svg" width="150px"/>');
                     $('h1').append(value.name).css('color', value.color);
+                    $('.team-url').prepend(value.url);
                 }
+                $('div.span3 ul').append('<li><a href="team.html?team=' + key + '"><img src="images/logos/' + key + '.svg" width="25px"/> ' + value.name + '</a></li>')
+
             });
         },
         error: function () {
