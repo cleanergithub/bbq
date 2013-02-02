@@ -1,6 +1,4 @@
 bbq
 ===
 
-A Better Balanced Quotient.
-
-For http://sportshackday.com/
+A Better Balanced Quotient for http://sportshackday.com/.
