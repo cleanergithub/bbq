@@ -40,25 +40,25 @@ $.getJSON("2012season.json").done( (data) ->
     html += "</tr>"
   )
   html += "</table>"
-  $("body").append(html)
+  $(".container").append(html)
   bothRight = $(".same").length
   bothWrong = $(".both-wrong").length
   bbqRight = $(".bbq-right").length
   ydsRight = $(".yds-right").length
-  $("body").append("<p>bbq better #{bbqRight} times</p>")
-  $("body").append("<p>bbq worse #{ydsRight} times</p>")
-  $("body").append("<p>both right #{bothRight} times</p>")
-  $("body").append("<p>both wrong #{bothWrong} times</p>")
+  $(".container").append("<p>bbq better #{bbqRight} times</p>")
+  $(".container").append("<p>bbq worse #{ydsRight} times</p>")
+  $(".container").append("<p>both right #{bothRight} times</p>")
+  $(".container").append("<p>both wrong #{bothWrong} times</p>")
 
   teamBbqA = ([team, bbq] for team, bbq of teamBbqs)
   teamBbqA.sort((a,b) -> return b[1] - a[1])
 
-  $("body").append("<h2>Season Team BBQs</h2>")
+  $(".container").append("<h2>Season Team BBQs</h2>")
   html = '<table>'
   teamBbqA.forEach((team) ->
     html += "<tr><td>#{team[0]}</td><td>#{Math.round(team[1]/16)}</td></tr>"
   )
   html += "</table>"
-  $("body").append(html)
+  $(".container").append(html)
 )
 
