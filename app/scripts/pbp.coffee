@@ -53,6 +53,7 @@ $.getJSON("2012season.json").done( (data) ->
   teamBbqA = ([team, bbq] for team, bbq of teamBbqs)
   teamBbqA.sort((a,b) -> return b[1] - a[1])
 
+  $("body").append("<h2>Season Team BBQs</h2>")
   html = '<table>'
   teamBbqA.forEach((team) ->
     html += "<tr><td>#{team[0]}</td><td>#{Math.round(team[1]/16)}</td></tr>"
