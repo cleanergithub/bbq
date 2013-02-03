@@ -59,7 +59,8 @@ bbq.team = getURLParameter('team');
 
 bbq.teamName = function () {
     if (bbq.team === '') {
-        $('h1').append('No Team Selected');
+        //$('h1').append('No Team Selected');
+        $('#content').empty().append('<h1>Choose a Team</h1><p class="lead"><i class=" icon-arrow-left"></i> From the List</p>' + '<p>Or read about the <a href="https://github.com/cleanergithub/bbq/wiki/The-Football-Better-Balanced-Quotient">Better Balanced Quotient (the BBQ)</a>.</p>')
     }
     $.ajax({
         url: 'teams.json',
@@ -68,7 +69,7 @@ bbq.teamName = function () {
                 //console.log('key : ' + key + ', value :' + value);
                 if (key === bbq.team) {
                     $('.logo').append('<img src="images/logos/' + key + '.svg" width="150px"/>');
-                    $('h1').append(value.name).css('color', value.color);
+                    $('h1').text(value.name).css('color', value.color);
                     $('.team-url').prepend(value.url).attr('href', value.url);
 
                     $('.team-twitter').append(value.twitter).attr('href', 'https://twitter.com/' + value.twitter);

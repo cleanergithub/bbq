@@ -1,5 +1,5 @@
 // Code here
 
 $(function () {
-    // document ready
+    $('nav').load('nav.html')
 });
