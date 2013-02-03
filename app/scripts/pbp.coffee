@@ -39,6 +39,8 @@ $.getJSON("2012season.json").done( (data) ->
           teamBbqs[team].O += parseInt(data.O)/16
           teamBbqs[team].D += parseInt(data.D)/16
           html += "#{team} #{game[team].P} #{game[team].T}<br/>"
+
+      html += "</td>"
     )
     html += "</tr>"
   )
