@@ -22,6 +22,23 @@ a:active {
 .team-nav a {
   color: #333333; }
 
+#sidebar {
+  float: left;
+  margin-left: 0; }
+
+#content {
+  float: right !important;
+  margin-left: auto; }
+
+@media (max-width: 767px) {
+  #sidebar {
+    display: inline-block;
+    margin-top: 20px;
+    width: 100%; }
+
+  #content {
+    float: none !important;
+    margin-left: 0; } }
 #total-bbq {
   display: inline-block;
   text-align: center;
