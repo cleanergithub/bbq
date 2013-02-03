@@ -88,9 +88,12 @@ bbq.teamStanding = function () {
         url: 'standings.json',
         success : function (json, textStatus, jqXHR) {
             $.each(json, function (key, value) {
-                //console.log('teamStanding - key : ' + key + ', value :' + value);
-                if (value === bbq.team) {
-                    console.log(value)
+                console.log('teamStanding - key : ' + key + ', value :' + value.team.public_id);
+                if (value.team.public_id === bbq.team) {
+                    $('#wins span').append(value.wins);
+                    $('#loses span').append(value.loses);
+                    $('#ties span').append(value.ties);
+
                 }
             });
         },

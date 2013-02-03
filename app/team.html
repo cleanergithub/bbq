@@ -23,16 +23,16 @@
     </div>
     </nav>
     
-        <div class="container-fluid" role="main">
+        <div class="container" role="main">
         
             <div class="row">
 
-                <div class="span3" id="sidebar">
+
+                    <div class="span3" id="sidebar">
                     <ul class="team-nav nav nav-tabs nav-stacked"></ul>
                 </div>
 
                 <!-- end .span3 -->
-               
                 <div class="span9" id="content">
                    <div class="row logo-row">
 
@@ -40,7 +40,7 @@
                             <div class="logo"></div>
                         </div>
                         <!-- end .span2 -->
-                        <div class="span7">
+                        <div class="span6">
                             <h1></h1>
                             <ul class="unstyled">
                                 <li><a class="team-url"> <i class="icon-external-link"> </i></a></li>
@@ -57,12 +57,13 @@
                     <div class="row bbq-row">
 
                             <div class="well span9">
-                                <h3>The BBQ</h3>
-                                <div id="off-bbq">
-                                    <div></div><br/>Offensive
-                                </div>
+                                <h2>Better Balanced Quotients</h2>
+
                                 <div id="total-bbq">
                                     <div></div><br/>Total
+                                </div>
+                                <div id="off-bbq">
+                                    <div></div><br/>Offensive
                                 </div>
                                 <div id="def-bbq">
                                     <div></div> <br/>Defensive
@@ -71,6 +72,12 @@
                                 <hr/>
 
                                 <h3>Season Standings</h3>
+                                <ul class="unstyled" id="standings">
+                                    <li class="text-success" id="wins"><span class="text-success"></span> Wins </li>
+                                        <li class="text-error" id="loses"><span class=""></span> Loses </li>
+                                        <li class="muted" id="ties"><span></span> Ties </li>
+
+                                </ul>
 
                             </div>
                             <!-- end .well -->
@@ -79,6 +86,7 @@
                    <!-- end .row -->
 
                 </div>
+
                 <!-- end .span9 -->
 
 
