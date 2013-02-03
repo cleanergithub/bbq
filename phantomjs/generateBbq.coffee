@@ -8,11 +8,12 @@ page.onResourceError = (request) ->
   console.error(JSON.stringify(request))
 
 console.log("[")
+year = 2010
 page.open(
-  "http://api.sportsdatallc.org/nfl-t1/2012/REG/schedule.xml?api_key=uwvp3s9um5m9am2hajtpessq",
+  "http://api.sportsdatallc.org/nfl-t1/#{year}/REG/schedule.xml?api_key=uwvp3s9um5m9am2hajtpessq",
   (status) ->
     if status != "success"
-      console.error("Could not load 2012 data. " + status)
+      console.error("Could not load #{year} data. " + status)
       phantom.exit()
 
     xmlDoc = $.parseXML(page.content)
@@ -130,7 +131,7 @@ calcGameBbqs = (xml) ->
   [homeTeam, awayTeam].forEach( (team) ->
     ["O", "D"].forEach( (platoon) ->
       bbqs[team][platoon] = Math.round(bbqs[team]["#{platoon}A"].reduce( (a,b) ->
-        return a + b) / bbqs[team]["#{platoon}A"].length * 100)
+        return a + b) / bbqs[team]["#{platoon}A"].length * 100) if bbqs[team]["#{platoon}A"].length > 0
     )
     bbqs[team].T = Math.round((bbqs[team].O + bbqs[team].D)/2)
   )
