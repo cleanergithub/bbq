@@ -35,9 +35,9 @@ $.getJSON("2012season.json").done( (data) ->
         do (team, data) ->
           if !teamBbqs[team]?
             teamBbqs[team] = T:0, O:0, D:0
-          teamBbqs[team].T += parseInt(data.T)
-          teamBbqs[team].O += parseInt(data.O)
-          teamBbqs[team].D += parseInt(data.D)
+          teamBbqs[team].T += parseInt(data.T)/16
+          teamBbqs[team].O += parseInt(data.O)/16
+          teamBbqs[team].D += parseInt(data.D)/16
           html += "#{team} #{game[team].P} #{game[team].T}<br/>"
     )
     html += "</tr>"
@@ -71,7 +71,7 @@ $.getJSON("2012season.json").done( (data) ->
   $("div[role='main']").append("<h2>Season Team BBQs</h2>")
   html = '<table>'
   teamBbqA.forEach((team) ->
-    html += "<tr><td><sup>#{Math.round(team[1].O/16)}</sup>#{team[0]}</td><td>#{Math.round(team[1].T/16)}<sub>#{Math.round(team[1].D/16)}</sub></td></tr>"
+    html += "<tr><td><sup>#{Math.round(team[1].O)}</sup>#{team[0]}</td><td>#{Math.round(team[1].T)}<sub>#{Math.round(team[1].D)}</sub></td></tr>"
   )
   html += "</table>"
   $("div[role='main']").append(html)
