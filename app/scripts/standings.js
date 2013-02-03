@@ -11,7 +11,7 @@ $.getJSON("team-total-bbqs.json").done(function(teamBbqs) {
 
 function slopeChart(all_data) {
   WIDTH = 750;
-  HEIGHT = 1000;
+  HEIGHT = 1500;
 
   LEFT_MARGIN = 150;
   RIGHT_MARGIN = 150;
@@ -147,7 +147,7 @@ function slopeChart(all_data) {
 
     var offset;
 
-    var font_size = 14;
+    var font_size = 150;
     var l = d.length;
 
     var max = _max_key(d);
