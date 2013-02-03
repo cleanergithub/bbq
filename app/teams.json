@@ -2,186 +2,193 @@
     "ARI": {
         "color": "#B10339",
         "name": "Arizon Cardinals",
-        "url":"http://www.azcardinals.com/",
-        "twitter":"AZCardinals"
+        "url": "http://www.azcardinals.com/",
+        "twitter": "AZCardinals"
     },
     "ATL": {
         "color": "#000000",
         "name": "Atlanta Falcons",
-        "url":"http://www.atlantafalcons.com/",
-        "twitter" : "Atlanta_Falcons"
+        "url": "http://www.atlantafalcons.com/",
+        "twitter": "Atlanta_Falcons"
     },
     "BAL": {
         "color": "#2B025B",
         "name": "Baltimore Ravens",
-        "url":"http://www.baltimoreravens.com/",
-        "twitter":"Ravens"
+        "url": "http://www.baltimoreravens.com/",
+        "twitter": "Ravens"
     },
     "BUF": {
         "color": "#00133F",
         "name": "Buffalo Bills",
-        "url":"http://www.buffalobills.com/",
-        "twitter" : "buffalobills"
+        "url": "http://www.buffalobills.com/",
+        "twitter": "buffalobills"
     },
     "CAR": {
         "color": "#0097C6",
         "name": "Carolina Panthers",
-        "url":"http://www.panthers.com/",
-        "twitter" : "panthers"
+        "url": "http://www.panthers.com/",
+        "twitter": "panthers"
     },
     "CHI": {
         "color": "#00133F",
         "name": "Chicago Bears",
-        "url" : "http://www.chicagobears.com/",
-        "twitter" : "ChicagoBears"
+        "url": "http://www.chicagobears.com/",
+        "twitter": "ChicagoBears"
     },
     "CIN": {
         "color": "#FF2700",
         "name": "Cincinnati Bengals",
-        "url":"http://www.bengals.com/",
-        "twitter" : "Bengals"
+        "url": "http://www.bengals.com/",
+        "twitter": "Bengals"
     },
     "CLE": {
         "color": "#4C230E",
         "name": "Cleveland Browns",
-        "url" : "http://www.clevelandbrowns.com/",
-        "twitter" : "OfficialBrowns"
+        "url": "http://www.clevelandbrowns.com/",
+        "twitter": "OfficialBrowns"
     },
     "DAL": {
         "color": "#002E4D",
         "name": "Dallas Cowboys",
-        "url" : "http://www.dallascowboys.com/",
-        "twitter" : "dallascowboys"
+        "url": "http://www.dallascowboys.com/",
+        "twitter": "dallascowboys"
     },
     "DEN": {
         "color": "#002E4D",
         "name": "Denver Broncos",
-        "url" : "http://www.denverbroncos.com/",
-        "twitter" : "Denver_Broncos"
+        "url": "http://www.denverbroncos.com/",
+        "twitter": "Denver_Broncos"
     },
     "DET": {
         "color": "#006EA1",
         "name": "Detroit Lions",
-        "url" : "http://www.detroitlions.com/",
-        "twitter" : "DetroitLionsNFL"
+        "url": "http://www.detroitlions.com/",
+        "twitter": "DetroitLionsNFL"
     },
     "GB": {
         "color": "#294239",
         "name": "Green Bay Packers",
-        "url" : "http://www.packers.com/",
-        "twitter" : "packers"
+        "url": "http://www.packers.com/",
+        "twitter": "packers"
     },
     "HOU": {
         "color": "#00133F",
         "name": "Houston Texans",
-        "url" : "http://www.packers.com/",
-        "twitter" : "packers"
+        "url": "http://www.houstontexans.com/",
+        "twitter": "houstontexans"
     },
     "IND": {
         "color": "#00417E",
         "name": "Indianapolis Colts",
-        "url" : "http://www.packers.com/",
-        "twitter" : ""
+        "url": "http://www.colts.com/",
+        "twitter": "nflcolts"
     },
     "JAC": {
         "color": "#00839C",
-        "name": "Jacksonville Jaquars"
+        "name": "Jacksonville Jaquars",
+        "url": "http://www.jaguars.com/",
+        "twitter": "jaguars"
     },
     "KC": {
         "color": "#C60024",
-        "name": "Kansas City Chiefs"
+        "name": "Kansas City Chiefs",
+        "url": "http://www.kcchiefs.com/",
+        "twitter": "kcchiefs"
     },
     "MIA": {
         "color": "#006B79",
         "name": "Miami Dolphins",
-        "url":"http://www.miamidolphins.com/"
+        "url": "http://www.miamidolphins.com/",
+        "twitter": "MiamiDolphins"
     },
     "MIN": {
         "color": "#240A67",
-        "name": "Minnesota Vikings"
+        "name": "Minnesota Vikings",
+        "url": "http://www.vikings.com/",
+        "twitter": "VikingsFootball"
     },
     "NE": {
         "color": "#00295B",
         "name": "New England Patriots",
-        "url":"http://www.patriots.com/",
-        "twitter" : "Patriots"
+        "url": "http://www.patriots.com/",
+        "twitter": "Patriots"
     },
     "NO": {
         "color": "#C6A876",
         "name": "New Orleans Saints",
-        "url" : "http://www.neworleanssaints.com/",
-        "twitter" : "Saints"
+        "url": "http://www.neworleanssaints.com/",
+        "twitter": "Saints"
     },
     "NYG": {
         "color": "#003155",
         "name": "New York Giants",
-        "url" : "http://www.giants.com/",
-        "twitter" : "giants"
+        "url": "http://www.giants.com/",
+        "twitter": "giants"
     },
     "NYJ": {
         "color": "#174032",
         "name": "New York Jets",
-        "url":"http://www.newyorkjets.com/",
-        "twitter" : "nyjets"
+        "url": "http://www.newyorkjets.com/",
+        "twitter": "nyjets"
     },
     "OAK": {
         "color": "#000000",
         "name": "Oakland Raiders",
-        "url" : "http://www.raiders.com/",
-        "twitter" : "RAIDERS"
+        "url": "http://www.raiders.com/",
+        "twitter": "RAIDERS"
     },
     "PHI": {
         "color": "#002F30",
         "name": "Philadelphia Eagles",
-        "url" : "http://www.philadelphiaeagles.com/",
-        "twitter" : "eagles"
+        "url": "http://www.philadelphiaeagles.com/",
+        "twitter": "eagles"
     },
     "PIT": {
         "color": "#000000",
         "name": "Pittsburgh Steelers",
-        "url" : "http://www.steelers.com/",
-        "twitter" : "steelers"
+        "url": "http://www.steelers.com/",
+        "twitter": "steelers"
     },
     "SD": {
         "color": "#05173C",
         "name": "San Diego Chargers",
-        "url" : "http://www.chargers.com/",
-        "twitter" : "chargers"
+        "url": "http://www.chargers.com/",
+        "twitter": "chargers"
     },
     "SF": {
         "color": "#940029",
         "name": "San Francisco 49ers",
-        "url" : "http://www.49ers.com/",
-        "twitter" : "49ers"
+        "url": "http://www.49ers.com/",
+        "twitter": "49ers"
     },
     "SEA": {
         "color": "#030F1F",
         "name": "Seattle Seahawks",
-        "url" :"http://www.seahawks.com/",
-        "twitter" : "Seahawks"
+        "url": "http://www.seahawks.com/",
+        "twitter": "Seahawks"
     },
     "STL": {
         "color": "#00295B",
         "name": "Saint Louis Rams",
-        "url" : "http://www.stlouisrams.com/",
-        "twitter" : "StLouisRams"
+        "url": "http://www.stlouisrams.com/",
+        "twitter": "StLouisRams"
     },
     "TB": {
         "color": "#665C50",
         "name": "Tampa Bay Buccaneers",
-        "url" : "http://www.buccaneers.com/",
-        "twitter" : "tbbuccaneers"
+        "url": "http://www.buccaneers.com/",
+        "twitter": "tbbuccaneers"
     },
     "TEN": {
         "color": "#002C4B",
         "name": "Tennessee Titans",
-        "url" : "http://www.titansonline.com/",
-        "twitter" : "tennesseetitans"
+        "url": "http://www.titansonline.com/",
+        "twitter": "tennesseetitans"
     },
     "WAS": {
         "color": "#8C001A",
         "name": "Washington Redskins",
         "url": "http://www.redskins.com/",
-        "twitter" : "Redskins"
+        "twitter": "Redskins"
     }
 }
