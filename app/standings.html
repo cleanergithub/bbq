@@ -1,20 +1,50 @@
-<!DOCTYPE html>
-<meta charset="utf-8">
-<title>Team BBQ Standings</title>
-<style> #visual { font-family: "Georgia", serif; font-size: 16px; color: #777;}</style>
- <div id="container">
-    <header>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Team BBQ Standings</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="styles/bootstrap.min.css">
+        <link rel="stylesheet" href="styles/font-awesome.min.css">
+        <!--[if IE 7]>
+            <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css">
+        <![endif]-->
+        <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="styles/bbq.css">
+        <script src="scripts/vendor/modernizr.min.js"></script>
+    </head>
 
-    </header>
-    <div id="main" role="main">
-      <div id="slopegraph"></div>
+    <nav class="navbar">
+        <div class="navbar-inner">
+        <a class="brand" href="#"><i class="icon-food"> </i> <span class="navbar-brand-bbq">The BBQ</span></a>
+        <ul class="nav pull-right">
+                      <li><a href="https://github.com/cleanergithub/bbq/wiki/The-Football-Better-Balanced-Quotient"> What's BBQ?</a></li>
+                      <li class="divider-vertical"></li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Who Are We? <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="http://clea.nr">clea.nr</a></li>
+                            <li class="divider"></li>
+                          <li><a href="https://twitter.com/dharmabruce">  Sean <i class="icon-twitter"></i></a></li>
+                          <li><a href="https://twitter.com/josephtate"> Jody <i class="icon-twitter"></i></a></li>
+
+                        </ul>
+                      </li>
+                    </ul>
     </div>
-    <footer>
+    </nav>
 
-    </footer>
-  </div> <!-- eo #container -->
+        <div class="container" role="main">
+      <div id="slopegraph" class="well"></div>
+    </div>
+
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
 <script src="http://d3js.org/d3.v2.min.js?2.8.1"></script>
 <script src="scripts/standings.js"></script>
+<script>
+
+</script>

@@ -10,7 +10,7 @@ $.getJSON("team-total-bbqs.json").done(function(teamBbqs) {
 });
 
 function slopeChart(all_data) {
-  WIDTH = 750;
+  WIDTH = 900;
   HEIGHT = 1500;
 
   LEFT_MARGIN = 150;
@@ -259,7 +259,6 @@ function slopeChart(all_data) {
       })
       .attr('dy', '.35em')
       .attr('font-size', 16)
-      .attr('font-weight', 'bold')
       .attr('text-anchor', 'end')
       .text(function(d,i){ return d.label})
       .attr('fill', 'black')
@@ -284,7 +283,6 @@ function slopeChart(all_data) {
       })
       .attr('dy', '.35em')
       .attr('dx', 35)
-      .attr('font-weight', 'bold')
       .attr('font-size', 16)
       .text(function(d,i){ return d.label})
       .attr('fill', 'black')
@@ -310,10 +308,10 @@ function slopeChart(all_data) {
       })
       .attr('dy', '.35em')
       .attr('dx', 35)
-      .attr('font-weight', 'bold')
       .attr('font-size', 16)
       .text(function(d,i){ return d.label})
       .attr('fill', 'black')
+
 
   //
   sg.selectAll('.right_values')
@@ -389,3 +387,56 @@ function slopeChart(all_data) {
       .attr('opacity', .6)
       .attr('stroke', 'black')
 }
+
+// http://stackoverflow.com/questions/901115/how-can-i-get-query-string-values/901144#901144
+var getURLParameter = function (name) {
+    'use strict';
+    name = name.replace(/[\[]/, "\\\\[").replace(/[\]]/, "\\\\]");
+    var regexS = "[\\?&]" + name + "=([^&#]*)",
+        regex = new RegExp(regexS),
+        results = regex.exec(window.location.search);
+    if (results === null) {
+        return "";
+    } else {
+        return decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+};
+
+// success: data, textStatus, jqXHR
+// error: jqXHR, textStatus, errorThrown
+window.ajaxConsoleLog = function (functionName, textStatus, jqXHR) {
+    'use strict';
+    var face;
+    if (textStatus === 'success') {
+        face = ':)';
+    } else {
+        face = ':(';
+    }
+    console.log(face + ' ' +  
+        textStatus.toUpperCase()  + 
+        ' -- for ' + functionName + ' : jqXHR.statusText = ' + jqXHR.statusText + 
+        ', textStatus = ' + textStatus);
+};
+
+var bbq = {};
+
+bbq.team = getURLParameter('team');
+
+bbq.teamColors = function () {
+
+    $.ajax({
+        url: 'teams.json',
+        success: function (json, textStatus, jqXHR) {
+            $.each(json, function (key, value){
+              var name = value.name,
+                shortName = name.split(' ')[1];
+                $('text:contains("' + key + '")').attr('fill', value.color).attr('font-weight', '600').text(shortName);
+            });
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+            ajaxConsoleLog('teamName', textStatus, jqXHR);
+        }
+    })
+}
+
+bbq.teamColors();

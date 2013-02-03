@@ -2,24 +2,28 @@
     "ARI": {
         "color": "#B10339",
         "name": "Arizon Cardinals",
+        "short" : "Cardinals",
         "url": "http://www.azcardinals.com/",
         "twitter": "AZCardinals"
     },
     "ATL": {
         "color": "#000000",
         "name": "Atlanta Falcons",
+        "short" : "Falcons",
         "url": "http://www.atlantafalcons.com/",
         "twitter": "Atlanta_Falcons"
     },
     "BAL": {
         "color": "#2B025B",
         "name": "Baltimore Ravens",
+        "short" : "Ravens",
         "url": "http://www.baltimoreravens.com/",
         "twitter": "Ravens"
     },
     "BUF": {
         "color": "#00133F",
         "name": "Buffalo Bills",
+        "short": "Bills",
         "url": "http://www.buffalobills.com/",
         "twitter": "buffalobills"
     },
