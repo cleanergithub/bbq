@@ -10,7 +10,7 @@ $.getJSON("team-total-bbqs.json").done(function(teamBbqs) {
 });
 
 function slopeChart(all_data) {
-  WIDTH = 900;
+  WIDTH = 800;
   HEIGHT = 1500;
 
   LEFT_MARGIN = 150;
@@ -258,7 +258,7 @@ function slopeChart(all_data) {
         return y(d.left_coord)
       })
       .attr('dy', '.35em')
-      .attr('font-size', 16)
+      .attr('font-size', 14)
       .attr('text-anchor', 'end')
       .text(function(d,i){ return d.label})
       .attr('fill', 'black')
@@ -270,7 +270,7 @@ function slopeChart(all_data) {
         return y(d.left_coord)
       })
       .attr('dy', '.35em')
-      .attr('font-size', 16)
+      .attr('font-size', 14)
       .attr('text-anchor', 'end')
       .text(function(d,i){ return d.left})
       .attr('fill', 'black')
@@ -283,7 +283,7 @@ function slopeChart(all_data) {
       })
       .attr('dy', '.35em')
       .attr('dx', 35)
-      .attr('font-size', 16)
+      .attr('font-size', 14)
       .text(function(d,i){ return d.label})
       .attr('fill', 'black')
 
@@ -296,7 +296,7 @@ function slopeChart(all_data) {
       })
       .attr('dy', '.35em')
       .attr('dx', 10)
-      .attr('font-size', 16)
+      .attr('font-size', 14)
       .text(function(d,i){ return d.middle})
       .attr('fill', 'black')
 
@@ -308,7 +308,7 @@ function slopeChart(all_data) {
       })
       .attr('dy', '.35em')
       .attr('dx', 35)
-      .attr('font-size', 16)
+      .attr('font-size', 14)
       .text(function(d,i){ return d.label})
       .attr('fill', 'black')
 
@@ -322,7 +322,7 @@ function slopeChart(all_data) {
       })
       .attr('dy', '.35em')
       .attr('dx', 10)
-      .attr('font-size', 16)
+      .attr('font-size', 14)
       .text(function(d,i){ return d.right})
       .attr('fill', 'black')
 
