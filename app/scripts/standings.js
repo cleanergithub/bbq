@@ -373,6 +373,7 @@ function slopeChart(all_data) {
       })
       .attr('opacity', .6)
       .attr('stroke', 'black')
+      .attr('class', function(d,i){ return d.label})
 
     sg.selectAll('.slopes')
     .data(data).enter().append('svg:line')
@@ -386,8 +387,8 @@ function slopeChart(all_data) {
       })
       .attr('opacity', .6)
       .attr('stroke', 'black')
+      .attr('class', function(d,i){ return d.label})
 }
-
 // http://stackoverflow.com/questions/901115/how-can-i-get-query-string-values/901144#901144
 var getURLParameter = function (name) {
     'use strict';
