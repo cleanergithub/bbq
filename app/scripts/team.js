@@ -83,12 +83,15 @@ bbq.teamName = function () {
     })
 }
 
-bbq.standings = function () {
+bbq.teamStanding = function () {
     $.ajax({
         url: 'standings.json',
         success : function (json, textStatus, jqXHR) {
             $.each(json, function (key, value) {
-                console.log('key : ' + key + ', value :' + value);
+                //console.log('teamStanding - key : ' + key + ', value :' + value);
+                if (value === bbq.team) {
+                    console.log(value)
+                }
             });
         },
         error: function (jqXHR, textStatus, errorThrown) {
@@ -97,9 +100,27 @@ bbq.standings = function () {
     });
 }
 
+bbq.teamBbq = function () {
+    var teamBbqsA = [],
+        teamBbqs;
+    $.getJSON("team-total-bbqs.json").done(function(data) { 
+        teamBbqsA = data; 
+        teamBbqsA.forEach(function(team) { 
+            if (team[0] === bbq.team) { 
+                teamBbqs = team[1];
+                var totalBbq = Math.round(teamBbqs.T),
+                    offBbq = Math.round(teamBbqs.O),
+                    defBbq = Math.round(teamBbqs.D);
+                $('#total-bbq div').prepend(totalBbq);
+                $('#off-bbq div').prepend(offBbq);
+                $('#def-bbq div').prepend(defBbq);
+            } 
+        });
+    });
+}
 
 $(function () {
-    console.log('bbq.team is ' + bbq.team)
     bbq.teamName();
-    bbq.standings();
+    bbq.teamStanding();
+    bbq.teamBbq();
 });

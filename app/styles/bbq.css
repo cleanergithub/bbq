@@ -16,5 +16,42 @@ a:hover,
 a:active {
   color: #720303; }
 
+.logo {
+  padding-bottom: 1em; }
+
 .team-nav a {
   color: #333333; }
+
+#total-bbq {
+  display: inline-block;
+  text-align: center;
+  color: #999999;
+  line-height: 2em; }
+  #total-bbq div {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 600;
+    background: #222222;
+    color: #FFFFFF;
+    line-height: 1em;
+    padding: .25em;
+    border-radius: 5px;
+    /* future proofing */
+    display: inline-block;
+    font-size: 5em; }
+
+#off-bbq,
+#def-bbq {
+  display: inline-block;
+  text-align: center;
+  color: #999999; }
+  #off-bbq div,
+  #def-bbq div {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 600;
+    color: #777777;
+    line-height: 1em;
+    padding: .25em;
+    border-radius: 5px;
+    /* future proofing */
+    display: inline-block;
+    font-size: 2em; }

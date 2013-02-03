@@ -23,38 +23,69 @@
     </div>
     </nav>
     
-        <div class="container" role="main">
+        <div class="container-fluid" role="main">
         
             <div class="row">
 
+                <div class="span3">
+                    <ul class="team-nav nav nav-tabs nav-stacked"></ul>
+                </div>
+                <!-- end .span3 -->
                 <div class="span9">
                    <div class="row">
+
                         <div class="span2">
-                            <div class="logo well"></div>
+                            <div class="logo"></div>
                         </div>
+                        <!-- end .span2 -->
                         <div class="span7">
                             <h1></h1>
                             <ul class="unstyled">
                                 <li><a class="team-url"> <i class="icon-external-link"> </i></a></li>
                                 <li><a class="team-twitter"><i class="icon-twitter"></i></a></li>
-                                <ul> 
-<br/>
-<br/><br/>
-                   <p style="font-size:10em;">75<i style="font-size:50%;"class="icon-arrow-up"></i></p>
-
+                            </ul> 
 
                         </div>
+                        <!-- end .span7 -->
+
+                    </div>
+                        <!-- end .row -->
+
+
+                    <div class="row bbq-row">
+
+                            <div class="well span9">
+                                <h3>The BBQ</h3>
+                                <div id="off-bbq">
+                                    <div></div><br/>Offensive
+                                </div>
+                                <div id="total-bbq">
+                                    <div></div><br/>Total
+                                </div>
+                                <div id="def-bbq">
+                                    <div></div> <br/>Defensive
+                                </div>
+
+                                <hr/>
+
+                                <h3>Season Standings</h3>
+
+                            </div>
+                            <!-- end .well -->
+
                    </div>
+                   <!-- end .row -->
 
 
 
 
                 </div>
-                <div class="span3">
-                    <ul class="team-nav nav nav-tabs nav-stacked"></ul>
-                </div>
+                <!-- end .span9 -->
+
+
 
             </div>
+            <!-- end .row -->
 
 
 
@@ -68,11 +99,12 @@
 
 
         </div>
+        <!-- end .container -->
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
         <script src="scripts/vendor/bootstrap.min.js"></script>
-        <script src="components/handlebars/handlebars.js"></script>
+        <script src="components/underscore.string/dist/underscore.string.min.js"></script>
         <script>
             var _gaq=[['_setAccount','UA-30509506-1'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
