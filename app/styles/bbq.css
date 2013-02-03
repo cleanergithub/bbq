@@ -113,3 +113,7 @@ a:active {
 #slopegraph svg {
   display: block;
   margin: 0 auto 0 auto; }
+
+#h1-index {
+  font-size: 5em;
+  color: #720303; }
