@@ -430,8 +430,11 @@ bbq.teamColors = function () {
         success: function (json, textStatus, jqXHR) {
             $.each(json, function (key, value){
               var name = value.name,
-                shortName = name.split(' ')[1];
+                //shortName = name.split(' ')[1];
+                shortName = value.short;
+
                 $('text:contains("' + key + '")').attr('fill', value.color).attr('font-weight', '600').text(shortName);
+                $('line.' + key).attr('stroke', value.color);
             });
         },
         error: function (jqXHR, textStatus, errorThrown) {
