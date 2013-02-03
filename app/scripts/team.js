@@ -52,21 +52,21 @@ window.ajaxConsoleLog = function (functionName, textStatus, jqXHR) {
         ', textStatus = ' + textStatus);
 };
 
-var teamName = function () {
-    var team = getURLParameter('team');
+var bbq = {};
 
-    if (team === '') {
-        $('h1').append('No Team Selected')
+bbq.team = getURLParameter('team');
+
+
+bbq.teamName = function () {
+    if (bbq.team === '') {
+        $('h1').append('No Team Selected');
     }
-
-    console.log('team is ' + team)
-
     $.ajax({
         url: 'teams.json',
         success: function (json, textStatus, jqXHR) {
-            $.each(json, function(key, value){
-                console.log('key : ' + key + ', value :' + value);
-                if (key === team) {
+            $.each(json, function (key, value){
+                //console.log('key : ' + key + ', value :' + value);
+                if (key === bbq.team) {
                     $('.logo').append('<img src="images/logos/' + key + '.svg" width="150px"/>');
                     $('h1').append(value.name).css('color', value.color);
                     $('.team-url').prepend(value.url).attr('href', value.url);
@@ -83,7 +83,23 @@ var teamName = function () {
     })
 }
 
+bbq.standings = function () {
+    $.ajax({
+        url: 'standings.json',
+        success : function (json, textStatus, jqXHR) {
+            $.each(json, function (key, value) {
+                console.log('key : ' + key + ', value :' + value);
+            });
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+            ajaxConsoleLog('teamName', textStatus, jqXHR);
+        }
+    });
+}
+
 
 $(function () {
-    teamName();
+    console.log('bbq.team is ' + bbq.team)
+    bbq.teamName();
+    bbq.standings();
 });
