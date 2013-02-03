@@ -16,11 +16,16 @@ a:hover,
 a:active {
   color: #720303; }
 
+.well {
+  background: #FFFFFF; }
+
 .logo {
   padding-bottom: 1em; }
 
-.team-nav a {
-  color: #333333; }
+.team-nav {
+  background: #FFFFFF; }
+  .team-nav a {
+    color: #333333; }
 
 #sidebar {
   float: left;
@@ -76,6 +81,7 @@ a:active {
   #off-bbq div,
   #def-bbq div {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    border: 1px solid #EEEEEE;
     font-weight: 600;
     color: #777777;
     line-height: 1em;

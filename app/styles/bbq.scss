@@ -24,11 +24,16 @@ a:active  {
 
 }
 
+.well {
+    background: #FFFFFF;
+}
+
 .logo {
     padding-bottom: 1em;
 }
 
 .team-nav {
+    background: #FFFFFF;
     a {
         color:#333333;
     }
@@ -97,7 +102,9 @@ a:active  {
     color: #999999;
     margin-left: .5em;
     div {
-        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+            border: 1px solid #EEEEEE;
+ 
          font-weight: 600;
          color: #777777;
          line-height: 1em;

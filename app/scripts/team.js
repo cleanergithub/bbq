@@ -108,12 +108,13 @@ bbq.teamBbq = function () {
         teamBbqs;
     $.getJSON("team-total-bbqs.json").done(function(data) { 
         teamBbqsA = data; 
-        teamBbqsA.forEach(function(team) { 
+        teamBbqsA.forEach(function(team, index) { 
             if (team[0] === bbq.team) { 
                 teamBbqs = team[1];
                 var totalBbq = Math.round(teamBbqs.T),
                     offBbq = Math.round(teamBbqs.O),
                     defBbq = Math.round(teamBbqs.D);
+                $('#bbq-rank span').append(index + 1);
                 $('#total-bbq div').prepend(totalBbq);
                 $('#off-bbq div').prepend(offBbq);
                 $('#def-bbq div').prepend(defBbq);
