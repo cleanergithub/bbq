@@ -1,0 +1,163 @@
+$bbq-color: #720303;
+$helvetica: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+* {
+    font-family: 'Crete Round', serif;
+}
+
+body {
+    background: #EEEEEE;
+}
+
+body {
+  padding-top: 60px;
+  padding-bottom: 40px; }
+
+/* Remove top padding when top navbar goes static in narrow viewports */
+@media (max-width: 979px) {
+  body {
+    padding-top: 0; } }
+
+.navbar-brand-bbq {
+    color: $bbq-color;
+}
+
+a,
+a:link,
+a:visited {
+    color: $bbq-color;   
+}
+ 
+a:hover,
+a:active  {
+     color: $bbq-color;   
+
+}
+
+.well {
+    background: #FFFFFF;
+}
+
+.logo {
+    padding-bottom: 1em;
+}
+
+.team-nav {
+    background: #FFFFFF;
+    a {
+        color:#333333;
+    }
+}
+
+#sidebar {
+    float:left;
+    margin-left:0;
+}
+
+#content {
+    float:right !important;
+    margin-left:auto;
+}
+
+@media (max-width: 767px) {
+    #sidebar {
+        display: inline-block;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    #content {
+        float:none !important;
+        margin-left:0;
+    }
+}
+
+#total-bbq {
+    display:inline-block;
+    text-align: center;
+    color: #999999;
+    line-height: 2em;
+    div {
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+         font-weight: 600;
+         text-shadow: 1px 1px 1px #000; 
+         background: #222222;
+         color: #FFFFFF;
+         line-height: 1em;
+         padding: .25em;
+         border-radius: 5px; /* future proofing */
+         display: inline-block;
+         font-size: 5em;
+           /* Safari 4-5, Chrome 1-9 */
+        background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#555555), to(#000000));
+        
+        /* Safari 5.1, Chrome 10+ */
+        background: -webkit-linear-gradient(top, #555555, #000000);
+        
+        /* Firefox 3.6+ */
+        background: -moz-linear-gradient(top, #555555, #000000);
+        
+        /* IE 10 */
+        background: -ms-linear-gradient(top, #555555, #000000);
+        
+        /* Opera 11.10+ */
+        background: -o-linear-gradient(top, #555555, #000000);
+    }
+}
+
+#off-bbq,
+#def-bbq {
+    display:inline-block;
+    text-align: center;
+    color: #999999;
+    margin-left: .5em;
+    div {
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+            border: 1px solid #EEEEEE;
+ 
+         font-weight: 600;
+         color: #777777;
+         line-height: 1em;
+         padding: .25em;
+        background-color: #FFFFFF;
+
+         border-radius: 5px; /* future proofing */
+         display: inline-block;
+        font-size: 2em;
+           /* Safari 4-5, Chrome 1-9 */
+        background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFFFFF), to(#EEEEEE));
+        
+        /* Safari 5.1, Chrome 10+ */
+        background: -webkit-linear-gradient(top, #FFFFFF, #EEEEEE);
+        
+        /* Firefox 3.6+ */
+        background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE);
+        
+        /* IE 10 */
+        background: -ms-linear-gradient(top, #FFFFFF, #EEEEEE);
+        
+        /* Opera 11.10+ */
+        background: -o-linear-gradient(top, #FFFFFF, #EEEEEE);
+
+    }
+}
+
+#standings {
+    font-size: 1.5em;
+    li {
+        line-height: 1.5em;
+    }
+}
+   
+#slopegraph * {
+    font-family: $helvetica;
+}
+
+#slopegraph svg {
+    margin-right:0;
+}
+
+#h1-index {
+    font-size: 5em;
+    color: $bbq-color;
+}

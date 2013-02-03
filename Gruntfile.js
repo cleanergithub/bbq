@@ -114,7 +114,8 @@ module.exports = function( grunt ) {
     output: 'dist',
 
     mkdirs: {
-      staging: 'app/'
+      staging: 'app/',
+      output: 'dist/'
     },
 
     // Below, all paths are relative to the staging directory, which is a copy
