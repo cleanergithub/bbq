@@ -24,6 +24,32 @@ a:active  {
 
 }
 
+/* http://stackoverflow.com/questions/9245887/twitter-boostrap-2-how-to-get-responsive-design-to-place-sidebar-on-the-bottom */
+
+#sidebar {
+    margin-left:3em;
+    display: inline-block;
+
+}
+
+#content {
+    margin-left:2em;
+    display: inline-block;
+}
+
+
+@media (max-width: 767px) {
+    #sidebar {
+        margin-top: 20px;
+        margin-left: 0;
+        width: 100%;    }
+
+    #content {
+        float:right;
+        margin-left:0;
+    }
+}
+
 .logo {
     padding-bottom: 1em;
 }
