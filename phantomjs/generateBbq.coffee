@@ -1,4 +1,3 @@
-
 phantom.injectJs("../components/jquery/jquery.min.js")
 
 page = require('webpage').create()
@@ -7,10 +6,12 @@ page.onResourceError = (request) ->
   console.error("onResourceError:")
   console.error(JSON.stringify(request))
 
+apiKey = "private"
+
 console.log("[")
 year = 2010
 page.open(
-  "http://api.sportsdatallc.org/nfl-t1/#{year}/REG/schedule.xml?api_key=uwvp3s9um5m9am2hajtpessq",
+  "http://api.sportsdatallc.org/nfl-t1/#{year}/REG/schedule.xml?api_key=#{apiKey}",
   (status) ->
     if status != "success"
       console.error("Could not load #{year} data. " + status)
@@ -41,7 +42,7 @@ page.open(
         newPage.onResourceError = page.onResourceError
 
         newPage.open(
-          "http://api.sportsdatallc.org/nfl-t1#{href}?api_key=uwvp3s9um5m9am2hajtpessq",
+          "http://api.sportsdatallc.org/nfl-t1#{href}?api_key=#{apiKey}",
           (status) ->
             if status != "success"
               console.error("Could not load game data.")
