@@ -15,7 +15,9 @@
 
   year = 2010;
 
-  page.open("http://api.sportsdatallc.org/nfl-t1/" + year + "/REG/schedule.xml?api_key=uwvp3s9um5m9am2hajtpessq", function(status) {
+  var apiKey = "private";
+
+  page.open("http://api.sportsdatallc.org/nfl-t1/" + year + "/REG/schedule.xml?api_key=#{apiKey}", function(status) {
     var $xml, loadNextWeek, weeks, xmlDoc;
     if (status !== "success") {
       console.error(("Could not load " + year + " data. ") + status);
@@ -45,7 +47,7 @@
         href = $(element).attr("href");
         newPage = require('webpage').create();
         newPage.onResourceError = page.onResourceError;
-        return newPage.open("http://api.sportsdatallc.org/nfl-t1" + href + "?api_key=uwvp3s9um5m9am2hajtpessq", function(status) {
+        return newPage.open("http://api.sportsdatallc.org/nfl-t1" + href + "?api_key=#{apiKey}", function(status) {
           if (status !== "success") {
             console.error("Could not load game data.");
             if (pbps.length > 0) {
