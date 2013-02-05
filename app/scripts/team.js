@@ -58,9 +58,10 @@ bbq.team = getURLParameter('team');
 
 
 bbq.teamName = function () {
+    'use strict';
     if (bbq.team === '') {
         //$('h1').append('No Team Selected');
-        $('#content').empty().append('<h1>Choose a Team</h1><p class="lead"><i class=" icon-arrow-left"></i> From the List</p>' + '<p>Or read about the <a href="https://github.com/cleanergithub/bbq/wiki/The-Football-Better-Balanced-Quotient">Better Balanced Quotient (the BBQ)</a>.</p>')
+        $('#content').empty().append('<h1>Choose a Team</h1><p class="lead">From the List</p>' + '<p>Or read about the <a href="https://github.com/cleanergithub/bbq/wiki/The-Football-Better-Balanced-Quotient">Better Balanced Quotient (the BBQ)</a>.</p>');
     }
     $.ajax({
         url: 'teams.json',
@@ -74,17 +75,18 @@ bbq.teamName = function () {
 
                     $('.team-twitter').append(value.twitter).attr('href', 'https://twitter.com/' + value.twitter);
                 }
-                $('div.span3 ul').append('<li><a href="team.html?team=' + key + '"><img src="images/logos/' + key + '.svg" width="25px"/> ' + value.name + '</a></li>')
+                $('div.span3 ul').append('<li><a href="team.html?team=' + key + '"><img src="images/logos/' + key + '.svg" width="25px"/> ' + value.name + '</a></li>');
 
             });
         },
         error: function (jqXHR, textStatus, errorThrown) {
             ajaxConsoleLog('teamName', textStatus, jqXHR);
         }
-    })
-}
+    });
+};
 
 bbq.teamStanding = function () {
+    'use strict';
     $.ajax({
         url: 'standings.json',
         success : function (json, textStatus, jqXHR) {
@@ -102,9 +104,10 @@ bbq.teamStanding = function () {
             ajaxConsoleLog('teamName', textStatus, jqXHR);
         }
     });
-}
+};
 
 bbq.teamBbq = function () {
+    'use strict';
     var teamBbqsA = [],
         teamBbqs;
     $.getJSON("team-total-bbqs.json").done(function(data) { 
@@ -122,9 +125,10 @@ bbq.teamBbq = function () {
             } 
         });
     });
-}
+};
 
 $(function () {
+    'use strict';
     bbq.teamName();
     bbq.teamStanding();
     bbq.teamBbq();
